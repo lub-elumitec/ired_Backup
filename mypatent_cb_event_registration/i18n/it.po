@@ -1,0 +1,932 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mypatent_cb_event_registration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-23 11:12+0000\n"
+"PO-Revision-Date: 2022-02-23 11:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "&amp;nbsp;All Tickets are for the same person"
+msgstr "&amp;nbsp;Tutti i biglietti sono per la stessa persona"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "&amp;nbsp;I have taken note of the"
+msgstr "&amp;nbsp;Ho preso atto del"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "-- Select a Gender --"
+msgstr "-- Seleziona un genere --"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "-- Select a country --"
+msgstr "-- Seleziona un Paese --"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"09:30\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "11 h"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "11:00<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "11:05"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "11:45<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"12:45\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "13:30<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "13:45"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "14:30<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "15:15<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "16:30"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "17:00"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "17:45<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font class=\"text-o-color-3\">LUNCH EXHIBITION</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font class=\"text-o-color-3\">POST-SYMPOSIUM</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font class=\"text-o-color-3\">PRE-SYMPOSIUM</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font class=\"text-o-color-3\">Welcome - Opening</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<font style=\"\" class=\"text-600\">Information will follow\n"
+"                                            </font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<font style=\"\" class=\"text-600\">Information will follow\n"
+"                                            </font>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<font style=\"\" class=\"text-600\">Information will follow</font>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font style=\"\" class=\"text-600\">Information will follow</font><br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<font style=\"\" class=\"text-800\">\n"
+"                                <span style=\"font-size: 18px;\">11:45</span><br/>\n"
+"                            </font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<font style=\"\" class=\"text-o-color-3\">SATURDAY 7.5.2022&amp;nbsp;</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<font style=\"font-size: 62px;\" class=\"text-o-color-3\">\n"
+"                                <span style=\"font-size: 36px;\"/>\n"
+"                            </font>\n"
+"                            <font class=\"text-o-color-3\">SYMPOSIUM</font>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-size: 18px;\">\n"
+"                                                <span style=\"font-size: medium;\">FRIDAY\n"
+"                                                    6.5.2022 08:30\n"
+"                                                </span>\n"
+"                                            </span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-size: 18px;\">12:30\n"
+"                            </span>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 18px;\">14:15</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 18px;\">15:00</span><br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-size: 18px;\">15:30\n"
+"                            </span>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 18px;\">18:00</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 18px;\">FRIDAY 06.05.2022, 10:45</span><br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-size: 18px;\">SATURDAY 7.5.2022 15:00</span>\n"
+"                                                <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-size: 18px;\">SATURDAY 7.5.2022 15:00</span>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 24px;\"> 08:30</span><br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 24px;\">6.5.2022</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-size: 24px;\">FRIDAY </span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-weight: 400;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip14847\">Lugano Region Booking\n"
+"                                    </span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-weight: bolder;\">&amp;nbsp;and safe 100 EUR\n"
+"                        </span>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-weight: bolder;\">28.2.22\n"
+"                            </span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">CURADEN WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">DENTSPLY SIRONA WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">INSTITUT STRAUMANN WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">IVOCLAR VIVADENT WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">NOBEL BIOCARE WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<span style=\"font-weight: bolder;\">PRIVACY<br/>\n"
+"                            </span>\n"
+"                            By registering you agree that your personal data may be stored and that photos of the symposium may be used for marketing purposes."
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<span style=\"font-weight: bolder;\">THOMMEN MEDICAL WORKSHOP</span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<strong>\n"
+"                                <strong>\n"
+"                                    <span style=\"font-weight: 400;\">Moderators: CHRISTOPH HÄMMERLE · IRENA SAILER\n"
+"                                    </span>\n"
+"                                </strong>\n"
+"                            </strong>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<strong>CANCELLATION<br/></strong>\n"
+"                            All registrations received are considered binding. In the event of cancellation by 2.5.2022 CHF 100.- will be charged. After this date the full amount will be due."
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<strong>CE CREDITS</strong>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"<strong>Deadline&amp;nbsp;\n"
+"                                <strong>online</strong>\n"
+"                                &amp;nbsp;registration: 2.5.2022\n"
+"                            </strong>\n"
+"                            . After this date, only on-site registration will be possible. A supplement of CHF 100.- will be charged for on-site registration."
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "<strong>SIMULTANEOUS TRANSLATION</strong>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:mail.template,body_html:mypatent_cb_event_registration.event_notification
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
+"<t t-set=\"date_begin\" t-value=\"format_datetime(object.event_id.date_begin, tz='UTC', dt_format=&quot;yyyyMMdd'T'HHmmss'Z'&quot;)\"/>\n"
+"<t t-set=\"date_end\" t-value=\"format_datetime(object.event_id.date_end, tz='UTC', dt_format=&quot;yyyyMMdd'T'HHmmss'Z'&quot;)\"/>\n"
+"<t t-set=\"is_online\" t-value=\"'is_published' in object.event_id and object.event_id.is_published\"/>\n"
+"<t t-set=\"event_organizer\" t-value=\"object.event_id.organizer_id\"/>\n"
+"<t t-set=\"event_address\" t-value=\"object.event_id.address_id\"/>\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table width=\"590\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Your registration</span><br/>\n"
+"                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        <t t-out=\"object.name or ''\">Oscar Morgan</t>\n"
+"                    </span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <t t-if=\"is_online\">\n"
+"                        <a t-att-href=\"object.event_id.website_url\" style=\"padding: 8px 12px; font-size: 12px; color: #FFFFFF; text-decoration: none !important; font-weight: 400; background-color: #875A7B; border: 0px solid #875A7B; border-radius:3px\">\n"
+"                            View Event\n"
+"                        </a>\n"
+"                    </t>\n"
+"                    <t t-else=\"\">\n"
+"                        <img t-att-src=\"'/logo.png?company=%s' % object.company_id.id\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"'%s' % object.company_id.name\"/>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- EVENT DESCRIPTION -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table width=\"590\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                    <div>\n"
+"                        Hello <t t-out=\"object.name or ''\">Oscar Morgan</t>,<br/>\n"
+"                        We are happy to confirm your registration to the event\n"
+"                        <t t-if=\"is_online\">\n"
+"                            <a t-att-href=\"object.event_id.website_url\" style=\"color:#875A7B;text-decoration:none;\" t-out=\"object.event_id.name or ''\">OpenWood Collection Online Reveal</a>\n"
+"                        </t>\n"
+"                        <t t-else=\"\">\n"
+"                            <strong t-out=\"object.event_id.name or ''\">OpenWood Collection Online Reveal</strong>\n"
+"                        </t>\n"
+"                        for attendee <t t-out=\"object.name or ''\">Oscar Morgan</t>.\n"
+"\n"
+"                    </div>\n"
+"                    <div>\n"
+"                        <table>\n"
+"                            <tr><td><strong>Event</strong></td><td><t t-out=\"object.event_id.name or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Ticket</strong></td><td><t t-out=\"object.event_ticket_id.name or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>First Name</strong></td><td><t t-out=\"object.firstname or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Last Name</strong></td><td><t t-out=\"object.lastname or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Gender</strong></td><td><t t-out=\"object.gender_id.name or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Title</strong></td><td><t t-out=\"object.title or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Email</strong></td><td><t t-out=\"object.email or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Phone Number</strong></td><td><t t-out=\"object.phone or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Country</strong></td><td><t t-out=\"object.country_id.name or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>City</strong></td><td><t t-out=\"object.city or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Zip</strong></td><td><t t-out=\"object.zip or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Street</strong></td><td><t t-out=\"object.street or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>University/Company</strong></td><td><t t-out=\"object.company_name or ''\"> </t></td></tr>\n"
+"                            <tr><td><strong>Voucher Code</strong></td><td><t t-out=\"object.voucher_code or ''\"> </t></td></tr>\n"
+"                        </table>\n"
+"\n"
+"                    </div>\n"
+"                    <div>\n"
+"                        <br/>\n"
+"                        <strong>Add this event to your calendar</strong>\n"
+"                        <a t-attf-href=\"https://www.google.com/calendar/render?action=TEMPLATE&amp;text={{ object.event_id.name }}&amp;dates={{ date_begin }}/{{ date_end }}&amp;location={{ location }}\" style=\"padding:3px 5px;border:1px solid #875A7B;color:#875A7B;text-decoration:none;border-radius:3px;\" target=\"new\"><img src=\"/web_editor/font_to_img/61525/rgb(135,90,123)/16\" style=\"vertical-align:middle;\" height=\"16\" alt=\"\"/> Google</a>\n"
+"                        <a t-attf-href=\"/event/{{ slug(object.event_id) }}/ics\" style=\"padding:3px 5px;border:1px solid #875A7B;color:#875A7B;text-decoration:none;border-radius:3px;\"><img src=\"/web_editor/font_to_img/61525/rgb(135,90,123)/16\" style=\"vertical-align:middle;\" height=\"16\" alt=\"\"/> iCal/Outlook</a>\n"
+"                        <a t-attf-href=\"https://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title={{ object.event_id.name }}&amp;in_loc={{ location }}&amp;st={{ format_datetime(object.event_id.date_begin, tz='UTC', dt_format='yyyyMMdd\\'T\\'HHmmss') }}&amp;et={{ format_datetime(object.event_id.date_end, tz='UTC', dt_format='yyyyMMdd\\'T\\'HHmmss') }}\" style=\"padding:3px 5px;border:1px solid #875A7B;color:#875A7B;text-decoration:none;border-radius:3px;\" target=\"new\">\n"
+"                            <img src=\"/web_editor/font_to_img/61525/rgb(135,90,123)/16\" style=\"vertical-align:middle;\" height=\"16\" alt=\"\"/> Yahoo\n"
+"                        </a>\n"
+"                        <br/><br/>\n"
+"                    </div>\n"
+"                    <div>\n"
+"                        See you soon,<br/>\n"
+"                        <span style=\"color: #454748;\">\n"
+"                        -- <br/>\n"
+"                        <t t-if=\"event_organizer\">\n"
+"                            <t t-out=\"event_organizer.name or ''\">YourCompany</t>\n"
+"                        </t>\n"
+"                        <t t-else=\"\">\n"
+"                            The <t t-out=\"object.event_id.name or ''\">OpenWood Collection Online Reveal</t> Team\n"
+"                        </t>\n"
+"                        </span>\n"
+"                    </div>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- DETAILS -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table width=\"590\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                    <table style=\"width:100%;\">\n"
+"                        <tr>\n"
+"                            <td style=\"vertical-align:top;\">\n"
+"                                <img src=\"/web_editor/font_to_img/61555/rgb(81,81,102)/34\" style=\"padding:4px;max-width:inherit;\" height=\"34\" alt=\"\"/>\n"
+"                            </td>\n"
+"                            <td style=\"padding: 0px 10px 0px 10px;width:50%;line-height:20px;vertical-align:top;\">\n"
+"                                <div><strong>From</strong> <t t-out=\"object.event_id.date_begin_located or ''\">May 4, 2021, 7:00:00 AM</t></div>\n"
+"                                <div><strong>To</strong> <t t-out=\"object.event_id.date_end_located or ''\">May 6, 2021, 5:00:00 PM</t></div>\n"
+"                                <div style=\"font-size:12px;color:#9e9e9e\"><i><strong>TZ</strong> <t t-out=\"object.event_id.date_tz or ''\">Europe/Brussels</t></i></div>\n"
+"                            </td>\n"
+"                            <td style=\"vertical-align:top;\">\n"
+"                                <t t-if=\"event_address\">\n"
+"                                    <img src=\"/web_editor/font_to_img/61505/rgb(81,81,102)/34\" style=\"padding:4px;max-width:inherit;\" height=\"34\" alt=\"\"/>\n"
+"                                </t>\n"
+"                            </td>\n"
+"                            <td style=\"padding: 0px 10px 0px 10px;width:50%;vertical-align:top;\">\n"
+"                                <t t-if=\"event_address\">\n"
+"                                    <t t-set=\"location\" t-value=\"''\"/>\n"
+"                                    <t t-if=\"object.event_id.address_id.name\">\n"
+"                                        <div t-out=\"object.event_id.address_id.name or ''\">Teksa SpA</div>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.event_id.address_id.street\">\n"
+"                                        <div t-out=\"object.event_id.address_id.street or ''\">Puerto Madero 9710</div>\n"
+"                                        <t t-set=\"location\" t-value=\"object.event_id.address_id.street\"/>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.event_id.address_id.street2\">\n"
+"                                        <div t-out=\"object.event_id.address_id.street2 or ''\">Of A15, Santiago (RM)</div>\n"
+"                                        <t t-set=\"location\" t-value=\"'%s, %s' % (location, object.event_id.address_id.street2)\"/>\n"
+"                                    </t>\n"
+"                                    <div>\n"
+"                                    <t t-if=\"object.event_id.address_id.city\">\n"
+"                                        <t t-out=\"object.event_id.address_id.city or ''\">Pudahuel</t>,\n"
+"                                        <t t-set=\"location\" t-value=\"'%s, %s' % (location, object.event_id.address_id.city)\"/>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.event_id.address_id.state_id.name\">\n"
+"                                        <t t-out=\"object.event_id.address_id.state_id.name or ''\">C1</t>,\n"
+"                                        <t t-set=\"location\" t-value=\"'%s, %s' % (location, object.event_id.address_id.state_id.name)\"/>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.event_id.address_id.zip\">\n"
+"                                        <t t-out=\"object.event_id.address_id.zip or ''\">98450</t>\n"
+"                                        <t t-set=\"location\" t-value=\"'%s, %s' % (location, object.event_id.address_id.zip)\"/>\n"
+"                                    </t>\n"
+"                                    </div>\n"
+"                                    <t t-if=\"object.event_id.address_id.country_id.name\">\n"
+"                                        <div t-out=\"object.event_id.address_id.country_id.name or ''\">Argentina</div>\n"
+"                                        <t t-set=\"location\" t-value=\"'%s, %s' % (location, object.event_id.address_id.country_id.name)\"/>\n"
+"                                    </t>\n"
+"                                </t>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </table>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                    <t t-if=\"event_organizer\">\n"
+"                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"\n"
+"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                    <!-- CONTACT ORGANIZER -->\n"
+"                    <t t-if=\"event_organizer\">\n"
+"                        <div>\n"
+"                            <span style=\"font-weight:300;margin:10px 0px\">Questions about this event?</span>\n"
+"                            <div>Please contact the organizer:</div>\n"
+"                            <ul>\n"
+"                                <li><t t-out=\"event_organizer.name or ''\">YourCompany</t></li>\n"
+"                                <t t-if=\"event_organizer.email\">\n"
+"                                    <li>Mail: <a t-attf-href=\"mailto:{{ event_organizer.email }}\" style=\"text-decoration:none;color:#875A7B;\" t-out=\"event_organizer.email or ''\">info@yourcompany.com</a></li>\n"
+"                                </t>\n"
+"                                <t t-if=\"event_organizer.phone\">\n"
+"                                    <li>Phone: <t t-out=\"event_organizer.phone or ''\">+1 650-123-4567</t></li>\n"
+"                                </t>\n"
+"                            </ul>\n"
+"                        </div>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                    <!-- CONTACT ORGANIZER SEPARATION -->\n"
+"                    <t t-if=\"is_online or event_address\">\n"
+"                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"\n"
+"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                    <!-- PWA MARKGETING -->\n"
+"                    <t t-if=\"is_online\">\n"
+"                        <div>\n"
+"                            <strong>Get the best mobile experience.</strong>\n"
+"                            <a href=\"/event\">Install our mobile app</a>\n"
+"                        </div>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                    <!-- PWA MARKGETING SEPARATION-->\n"
+"                    <t t-if=\"is_online and event_address\">\n"
+"                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"\n"
+"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                    <!-- GOOGLE MAPS LINK -->\n"
+"                    <t t-if=\"event_address\">\n"
+"                        <table style=\"width:100%;\"><tr><td>\n"
+"                            <div>\n"
+"                                <a t-attf-href=\"https://maps.google.com/maps?q={{ location }}\" target=\"new\">\n"
+"                                    <img t-attf-src=\"http://maps.googleapis.com/maps/api/staticmap?autoscale=1&amp;size=598x200&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xa5117d%7Clabel:%7C{{ location }}\" style=\"vertical-align:bottom; width: 100%;\" alt=\"Google Maps\"/>\n"
+"                                </a>\n"
+"                            </div>\n"
+"                        </td></tr></table>\n"
+"                    </t>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- FOOTER BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    <t t-if=\"object.company_id\">\n"
+"        <table width=\"590\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"        <tr><td style=\"text-align: center; font-size: 14px;\">\n"
+"            Sent by <a target=\"_blank\" t-attf-href=\"{{ object.company_id.website }}\" style=\"color: #875A7B;\" t-out=\"object.company_id.name or ''\">YourCompany</a>\n"
+"            <t t-if=\"is_online\">\n"
+"                <br/>\n"
+"                Discover <a href=\"/event\" style=\"color:#875A7B;\">all our events</a>.\n"
+"            </t>\n"
+"        </td></tr>\n"
+"        </table>\n"
+"    </t>\n"
+"</td></tr>\n"
+"</table>\n"
+"            "
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,help:mypatent_cb_event_registration.field_event_registration__lang
+msgid ""
+"All the emails sent to this attendee will be translated in this language."
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"All the revenues of the Symposium will be used for research and "
+"education.<br/><br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"All-ceramic restorations on teeth and implants: Lessons learnt (EN)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__name
+msgid "Attendee Name"
+msgstr "Nome partecipante"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"Avoid your composite restorations turn into a catastrophe! (IT)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "BREAK - EXHIBITION"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"Blame the right one! When failed adhesion ruins all-ceramic reconstructions (EN)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "Book your Hotelreservation here:"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "CHRISTOPH HÄMMERLE"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "Challenges in periodontal regeneration (IT)<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__city
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "City"
+msgstr "Località"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__company_name
+msgid "Company Name"
+msgstr "Nome della ditta"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__country_id
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Country"
+msgstr "Paese"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "END"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Email"
+msgstr "E-mail"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "English &lt;–&gt; Italian"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "English –&gt; German"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model,name:mypatent_cb_event_registration.model_event_event
+msgid "Event"
+msgstr "Evento"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model,name:mypatent_cb_event_registration.model_event_registration
+msgid "Event Registration"
+msgstr "Registrazione dell'evento"
+
+#. module: mypatent_cb_event_registration
+#: model:mail.template,name:mypatent_cb_event_registration.event_notification
+msgid "Event: Notification"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"FRIDAY\n"
+"                                                6.5.2022 08:30\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"FRIDAY\n"
+"                                            6.5.2022 08:30"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"FRIDAY 6.5.2022 08:30\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__firstname
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "First Name"
+msgstr "Nome"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "GAETANO PAOLONE"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "GET TOGETHER"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "GIOVANNI ZUCCHELLI"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "GIOVANNI ZUCCHELLI<br/>PETRA GIERTMÜHLEN<br/>MARC HÜRZELER"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "GIULIO RASPERINI"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__gender_id
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Gender"
+msgstr "Genere"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_event__hide_online_registration
+msgid "Hide online registration"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"How to manage implant disasters? (IT)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "Interdisciplinary case discussion&amp;nbsp;(EN)<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "Italian –&gt; German"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "LUCA CORDARO"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "LUNCH - EXHIBITION"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__lang
+msgid "Language"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__lastname
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Last Name"
+msgstr "Cognome"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "MARC HÜRZELER"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "MATTHIAS&amp;nbsp;ZEHNDER"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"Mucogingival surgery - solutions of esthetic nightmares (IT)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"Murphy’s law in endodontics (EN)\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "My personal view on progress in research and education (EN)<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "PANEL DISCUSSION"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "PETRA GIERTMÜHLEN"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Phone Number"
+msgstr "Numero telefonico"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "Pitfalls in treatment planning (EN)<br/>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#. openerp-web
+#: code:addons/mypatent_cb_event_registration/static/src/js/website_event_tickets.js:0
+#, python-format
+msgid "Please select at least one ticket."
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__salutation_id
+msgid "Salutation"
+msgstr "Saluto"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__street
+msgid "Street"
+msgstr "Via"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Street / Nr"
+msgstr "Via / Nr"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Ticket #"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__title
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__title_id
+msgid "Title"
+msgstr "Titolo"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Title <small>(Optional)</small>"
+msgstr "Titolo <small>(Optional)</small>"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid "URS BRODBECK"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "University/Company <small>(Optional)</small>"
+msgstr "Università/Impresa <small>(Optional)</small>"
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__voucher_code
+msgid "Voucher Code"
+msgstr "Codice buono"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Voucher Code <small>(Optional)</small>"
+msgstr "Codice buono <small>(Optional)</small>"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.event_description_full
+msgid ""
+"We are looking forward to welcoming you in Lugano!&amp;nbsp;\n"
+"                        <span style=\"font-weight: bolder;\">Secure your early bird ticket until&amp;nbsp;\n"
+"                        </span>"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:mail.template,subject:mypatent_cb_event_registration.event_notification
+msgid "Your registration at {{ object.event_id.name }}"
+msgstr ""
+
+#. module: mypatent_cb_event_registration
+#: model:ir.model.fields,field_description:mypatent_cb_event_registration.field_event_registration__zip
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "Zip"
+msgstr "NPA"
+
+#. module: mypatent_cb_event_registration
+#: model_terms:ir.ui.view,arch_db:mypatent_cb_event_registration.registration_attendee_details
+msgid "terms and conditions"
+msgstr "Termini e Condizioni"

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <template id="registration_attendee_details" name="Registration Attendee Details" inherit_id="website_event.registration_attendee_details">
+        <xpath expr="//t[@t-foreach='tickets']" position="replace">
+            <t t-foreach="tickets" t-as="ticket" t-if="availability_check">
+                        <t t-foreach="range(1, ticket['quantity'] + 1)" t-as="att_counter" name="attendee_loop">
+                            <t t-set="counter" t-value="counter + 1"/>
+                            <t t-if="counter==1">
+                            <div class="modal-body bg-light border-bottom" id="o_ticket_form_one">
+                                <h5 class="mt-1 pb-2 border-bottom">Ticket #<span t-esc="counter"/> <small class="text-muted">- <span t-esc="ticket['name']"/></small></h5>
+                                    <t t-set="selection_values" t-value="event.get_selection_values_for_registration()"/>
+                                    <div name="attendee_first_row" class="row">
+                                        <div name="attendee_gender" class="col-lg my-2">
+                                            <label>Gender</label>
+                                            <select class="form-control" t-attf-name="#{counter}-gender_id" required="This field is required">
+                                                <option selected="1" disabled="1" hidden="1" style="display: none;" value=""> -- Select a Gender -- </option>
+                                                <t t-foreach="selection_values['genders']" t-as="gender">
+                                                    <option t-att-value="gender.id"><t t-esc="gender.name"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div name="attendee_title" class="col-lg my-2">
+                                            <label>Title <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-title"/>
+                                        </div>
+                                        <div name="attendee_email" class="col-lg my-2">
+                                            <label>Email</label>
+                                            <input class="form-control" type="email" t-attf-name="#{counter}-email" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_second_row" class="row">
+                                        <div name="attendee_firstname" class="col-lg my-2">
+                                            <label>First Name</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-firstname" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_lastname" class="col-lg my-2">
+                                            <label>Last Name</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-lastname" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_phone" class="col-lg my-2">
+                                            <label>Phone Number</label>
+                                            <input class="form-control" type="tel" t-attf-name="#{counter}-phone" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_third_row" class="row">
+                                        <div name="attendee_country" class="col-lg my-2">
+                                            <label>Country</label>
+                                            <select class="form-control" t-attf-name="#{counter}-country_id" required="This field is required">
+                                                <option selected="1" disabled="1" hidden="1" style="display: none;" value=""> -- Select a country -- </option>
+                                                <t t-foreach="selection_values['countries']" t-as="country">
+                                                  <option t-att-value="country.id"><t t-esc="country.name"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div name="attendee_city" class="col-lg my-2">
+                                            <label>City</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-city" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_zip" class="col-lg my-2">
+                                            <label>Zip</label>
+                                            <input class="form-control" type="tel" t-attf-name="#{counter}-zip" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_third_row" class="row">
+                                        <div name="attendee_street" class="col-lg my-2">
+                                            <label>Street / Nr</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-street" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_company" class="col-lg my-2">
+                                            <label>University/Company <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-company_name"/>
+                                        </div>
+                                        <div name="attendee_voucher" class="col-lg my-2">
+                                            <label>Voucher Code <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-voucher_code"/>
+                                        </div>
+                                        <input class="d-none" type="text" t-attf-name="#{counter}-event_ticket_id" t-attf-value="#{ticket['id']}"/>
+                                        <input class="d-none" type="text" t-attf-name="#{counter}-lang" t-attf-value="#{request.env.lang}"/>
+                                    </div>
+                                        <div class="same_event_ticket">
+                                            <input type="checkbox" id="check_same_event_ticket" name="same_tickets"/> &amp;nbsp;All Tickets are for the same person
+                                        </div>
+                            </div>
+                        </t>
+
+                            <t t-else="">
+                            <div class="modal-body bg-light border-bottom no-first_ticket">
+                                <h5 class="mt-1 pb-2 border-bottom">Ticket #<span t-esc="counter"/> <small class="text-muted">- <span t-esc="ticket['name']"/></small></h5>
+                                    <t t-set="selection_values" t-value="event.get_selection_values_for_registration()"/>
+                                    <div name="attendee_first_row" class="row">
+                                        <div name="attendee_gender" class="col-lg my-2">
+                                            <label>Gender</label>
+                                            <select class="form-control" t-attf-name="#{counter}-gender_id" required="This field is required">
+                                                <option selected="1" disabled="1" hidden="1" style="display: none;" value=""> -- Select a Gender -- </option>
+                                                <t t-foreach="selection_values['genders']" t-as="gender">
+                                                    <option t-att-value="gender.id"><t t-esc="gender.name"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div name="attendee_title" class="col-lg my-2">
+                                            <label>Title <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-title"/>
+                                        </div>
+                                        <div name="attendee_email" class="col-lg my-2">
+                                            <label>Email</label>
+                                            <input class="form-control" type="email" t-attf-name="#{counter}-email" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_second_row" class="row">
+                                        <div name="attendee_firstname" class="col-lg my-2">
+                                            <label>First Name</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-firstname" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_lastname" class="col-lg my-2">
+                                            <label>Last Name</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-lastname" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_phone" class="col-lg my-2">
+                                            <label>Phone Number</label>
+                                            <input class="form-control" type="tel" t-attf-name="#{counter}-phone" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_third_row" class="row">
+                                        <div name="attendee_country" class="col-lg my-2">
+                                            <label>Country</label>
+                                            <select class="form-control" t-attf-name="#{counter}-country_id" required="This field is required">
+                                                <option selected="1" disabled="1" hidden="1" style="display: none;" value=""> -- Select a country -- </option>
+                                                <t t-foreach="selection_values['countries']" t-as="country">
+                                                  <option t-att-value="country.id"><t t-esc="country.name"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div name="attendee_city" class="col-lg my-2">
+                                            <label>City</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-city" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_zip" class="col-lg my-2">
+                                            <label>Zip</label>
+                                            <input class="form-control" type="tel" t-attf-name="#{counter}-zip" required="This field is required"/>
+                                        </div>
+                                    </div>
+                                    <div name="attendee_third_row" class="row">
+                                        <div name="attendee_street" class="col-lg my-2">
+                                            <label>Street / Nr</label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-street" required="This field is required"/>
+                                        </div>
+                                        <div name="attendee_company" class="col-lg my-2">
+                                            <label>University/Company <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-company_name"/>
+                                        </div>
+                                        <div name="attendee_voucher" class="col-lg my-2">
+                                            <label>Voucher Code <small>(Optional)</small></label>
+                                            <input class="form-control" type="text" t-attf-name="#{counter}-voucher_code"/>
+                                        </div>
+                                        <input class="d-none" type="text" t-attf-name="#{counter}-event_ticket_id" t-attf-value="#{ticket['id']}"/>
+                                        <input class="d-none" type="text" t-attf-name="#{counter}-lang" t-attf-value="#{request.env.lang}"/>
+                                    </div>
+
+                            </div>
+                        </t>
+                        </t>
+            </t>
+
+        </xpath>
+
+        <xpath expr="//div[hasclass('modal-footer')]" position="before">
+            <div class="modal-body bg-light border-bottom">
+                <div class="col-lg-6 mt-2">
+                    <input type="checkbox" id="check_terms" name="terms" required=""/><label>&amp;nbsp;I have taken note of the <a href="/terms" style="color: blue">terms and conditions</a></label>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="event_details" name="Event Header" inherit_id="website_event.event_details">
+        <t t-call="website_event.registration_template" position="attributes">
+            <attribute name="t-if">not event.hide_online_registration</attribute>
+        </t>
+        <xpath expr="//div[@name='event']/t/div[2]" position="replace">
+            <div class="container">
+                <div style="display: none">
+                    <t t-call="website_event.registration_template"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="event_description_full" name="Event Description" inherit_id="website_event.event_description_full">
+
+        <xpath expr="//div[@id='o_wevent_event_main_col']/span" position="after">
+            <t t-if="event.name == 'IRED LUGANO SYMPOSIUM 2022'">
+
+                <section class="s_text_block o_colored_level" data-name="Text" style="background-image: none;">
+                    <p data-original-title="" title="" aria-describedby="tooltip255379">
+                        We are looking forward to welcoming you in Lugano!&amp;nbsp;
+                        <span style="font-weight: bolder;">Secure your early bird ticket until&amp;nbsp;
+                        </span>
+                        <a href="https://28.2.0.22/">
+                            <span style="font-weight: bolder;">28.2.22
+                            </span>
+                        </a>
+                        <span style="font-weight: bolder;">&amp;nbsp;and safe 100 EUR
+                        </span>
+                        <br/>
+                    </p>
+                </section>
+                <section class="s_text_block o_colored_level pt8 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                        <div class="container s_allow_columns">
+                            <div class="row">
+                                <div class="o_colored_level col-lg-6">
+                                    <p><strong>SIMULTANEOUS TRANSLATION</strong></p>
+                                    <p>English &lt;–&gt; Italian</p>
+                                    <p>English –&gt; German</p>
+                                    <p>Italian –&gt; German</p>
+                                </div>
+                                <div class="o_colored_level col-lg-6">
+                                    <p><strong>CE CREDITS</strong></p>
+                                    <p>11 h</p>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="s_text_block o_colored_level pt8 pb16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <p data-original-title="" title="" aria-describedby="tooltip904133">
+                            <strong>Book your Hotelreservation here:
+                                <a href="https://www.luganoregion.com/it/booking#/accommodations" target="_blank" spellcheck="false" data-gramm="false">
+                                    <span style="font-weight: 400;" data-original-title="" title="" aria-describedby="tooltip14847">Lugano Region Booking
+                                    </span>
+                                </a>
+                            </strong>
+                        </p>
+                    </div>
+                </section>
+                <section class="s_title o_colored_level pt16 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip319511">
+                        <h2 style="text-align: center;">
+                            <font class="text-o-color-3">PRE-SYMPOSIUM</font>
+                        </h2>
+                        <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip582667">
+                            <span style="font-size: 24px;">FRIDAY </span>
+                            <a href="https://6.5.2022">
+                                <span style="font-size: 24px;">6.5.2022</span>
+                            </a>
+                            <span style="font-size: 24px;"> 08:30</span><br/>
+                        </p>
+                    </div>
+                </section>
+                <section class="s_company_team o_colored_level pt16 pb32" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed" style="">
+                            <div class="col-lg-6 pb24 o_colored_level shadow registersym pt8" style="">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/816-8fb25530/Straumann.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip488784" data-original-id="744" data-original-src="/web/image/744-0df8f2be/Straumann.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p style="text-align: left;">
+                                            <font style="" class="text-600">Information will follow
+                                            </font>
+                                            <br/>
+                                        </p>
+                                        <h5 style="text-align: left;">
+                                            <span style="font-weight: bolder;">INSTITUT STRAUMANN WORKSHOP</span>
+                                        </h5>
+                                        <p>
+                                            FRIDAY 6.5.2022 08:30
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="" class="col-lg-6 pb24 o_colored_level shadow registersym pt8">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/817-9811b4ef/Dentsply.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip930635" data-original-id="745" data-original-src="/web/image/745-03e5ab01/Dentsply.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p style="text-align: left;">
+                                            <font style="" class="text-600">Information will follow</font>
+                                            <br/>
+                                        </p>
+                                        <h5 style="text-align: left;">
+                                            <span style="font-weight: bolder;">DENTSPLY SIRONA WORKSHOP</span>
+                                        </h5>
+                                        <p>
+                                                FRIDAY
+                                                6.5.2022 08:30
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="s_company_team o_colored_level pt16 pb0" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div style="" class="col-lg-6 pt24 o_colored_level registersym shadow pb0">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/818-4dde4f46/Thommen%20Kopie.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip990377" data-original-id="748" data-original-src="/web/image/748-0dafff52/Thommen Kopie.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            <font style="" class="text-600">Information will follow</font>
+                                            <br/>
+                                        </p>
+                                        <h5><span style="font-weight: bolder;">THOMMEN MEDICAL WORKSHOP</span></h5>
+                                        <p>
+                                            <span style="font-size: 18px;">
+                                                <span style="font-size: medium;">FRIDAY
+                                                    6.5.2022 08:30
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="" class="col-lg-6 pt24 o_colored_level shadow registersym pb0">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/819-01e14c92/Ivoclar%20Kopie.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip806078" data-original-id="749" data-original-src="/web/image/749-c828de80/Ivoclar Kopie.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            <font style="" class="text-600">Information will follow</font><br/>
+                                        </p>
+                                        <h5><span style="font-weight: bolder;">IVOCLAR VIVADENT WORKSHOP</span></h5>
+                                        <p>
+                                            FRIDAY
+                                            6.5.2022 08:30
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb0 pt24" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <h1 style="text-align: center;">
+                            <font style="font-size: 62px;" class="text-o-color-3">
+                                <span style="font-size: 36px;"></span>
+                            </font>
+                            <font class="text-o-color-3">SYMPOSIUM</font>
+                        </h1>
+                        <h2 style="text-align: center;">
+                            <font class="text-o-color-3">Welcome - Opening</font>
+                        </h2>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">FRIDAY 06.05.2022, 10:45</span><br/>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pt16 pb8" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1035-d5caf7fb/Christoph%20H%C3%A4mmerle.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip561734" data-original-id="1007" data-original-src="/web/image/1007-8018b7b0/Christoph H%C3%A4mmerle.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>CHRISTOPH HÄMMERLE</h5>
+                                        <h5>11:05</h5>
+                                        <p>
+                                            My personal view on progress in research and education (EN)<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1036-09badddc/Giovanni%20Zucchelli.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip385376" data-original-id="1008" data-original-src="/web/image/1008-cdfdfe8e/Giovanni Zucchelli.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>GIOVANNI ZUCCHELLI</h5>
+                                        <h5>
+                                            11:45<br/>
+                                        </h5>
+                                        <p>
+                                            Mucogingival surgery - solutions of esthetic nightmares (IT)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h2 style="text-align: center;">LUNCH - EXHIBITION</h2>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">12:30
+                            </span>
+                            <br/>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pt8 pb4" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1037-1876710b/Matthias%20Zehnder.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip561734" data-original-id="1009" data-original-src="/web/image/1009-bc83c0d3/Matthias Zehnder.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>MATTHIAS&amp;nbsp;ZEHNDER</h5><h5>13:45</h5>
+                                        <p>
+                                            Murphy’s law in endodontics (EN)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1034-51cf1649/Giulio%20Rasperini.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip385376" data-original-id="1010" data-original-src="/web/image/1010-2d9eae94/Giulio Rasperini.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>GIULIO RASPERINI</h5>
+                                        <h5>
+                                            14:30<br/>
+                                        </h5>
+                                        <p>
+                                            Challenges in periodontal regeneration (IT)<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/967-aa4f9e5e/Diskussion.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip385376" data-original-id="774" data-original-src="/web/image/774-822e802b/Diskussion.png" data-mimetype="image/png" data-resize-width="500"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>PANEL DISCUSSION</h5>
+                                        <h5>
+                                            15:15<br/>
+                                        </h5>
+                                        <p>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt4" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h2 style="text-align: center;">BREAK - EXHIBITION
+                        </h2>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">15:30
+                            </span>
+                            <br/>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pt4 pb0" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1040-cba3beff/Urs%20Brodbeck.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip988917" data-original-id="1011" data-original-src="/web/image/1011-5f3d7a26/Urs Brodbeck.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>URS BRODBECK</h5><h5>16:30</h5>
+                                        <p>
+                                            Blame the right one! When failed adhesion ruins all-ceramic reconstructions (EN)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1042-4122b51d/Luca%20Cordaro.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip535049" data-original-id="1012" data-original-src="/web/image/1012-ef3dbcbf/Luca Cordaro.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>LUCA CORDARO</h5>
+                                        17:00
+                                        <p>
+                                            How to manage implant disasters? (IT)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 o_colored_level pb0">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/895-0b997aa5/Diskussion.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip62597" data-original-id="775" data-original-src="/web/image/775-822e802b/Diskussion.png" data-mimetype="image/png" data-resize-width="500" style=""/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>PANEL DISCUSSION</h5>
+                                        <h5>17:45<br/></h5>
+                                        <p><br/></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb24 pt0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h2 style="text-align: center;">GET TOGETHER</h2>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">18:00</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <h1 style="text-align: center;"><font style="" class="text-o-color-3">SATURDAY 7.5.2022&amp;nbsp;</font></h1></div>
+                </section>
+
+                <section class="s_text_block o_colored_level pb0 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <p style="text-align: center;">
+                            <strong>
+                                <strong>
+                                    <span style="font-weight: 400;">Moderators: CHRISTOPH HÄMMERLE · IRENA SAILER
+                                    </span>
+                                </strong>
+                            </strong>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pt8 pb8" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/891-5c04d684/Diskussion1.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip433383" data-original-id="780" data-original-src="/web/image/780-ab02ffa9/Diskussion1.png" data-mimetype="image/png" data-resize-width="500"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>GIOVANNI ZUCCHELLI<br/>PETRA GIERTMÜHLEN<br/>MARC HÜRZELER</h5>
+                                        <h5>
+                                            09:30
+                                            <br/>
+                                        </h5>
+                                        <p>
+                                            Interdisciplinary case discussion&amp;nbsp;(EN)<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1041-5643d863/Marc%20H%C3%BCrzeler.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip857532" data-original-id="1013" data-original-src="/web/image/1013-b4c257e3/Marc H%C3%BCrzeler.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>MARC HÜRZELER</h5>
+                                        <h5>
+                                            11:00<br/>
+                                        </h5>
+                                        <p>
+                                            Pitfalls in treatment planning (EN)<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h2 style="text-align: center;">
+                            <font class="text-o-color-3">LUNCH EXHIBITION</font>
+                        </h2>
+                        <p style="text-align: center;">
+                            <font style="" class="text-800">
+                                <span style="font-size: 18px;">11:45</span><br/>
+                            </font>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pt8 pb0" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 o_colored_level pb0 pt16">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1039-ae9fc2eb/Gaetano%20Paolone.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip433383" data-original-id="1014" data-original-src="/web/image/1014-08b2b17e/Gaetano Paolone.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>GAETANO PAOLONE</h5>
+                                        <h5>
+                                            12:45
+                                            <br/>
+                                        </h5>
+                                        <p>
+                                            Avoid your composite restorations turn into a catastrophe! (IT)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 o_colored_level pb0 pt16">
+                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/1038-3bba7fa9/Petra%20Giertm%C3%BChlen.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip857532" data-original-id="1015" data-original-src="/web/image/1015-7dbd0857/Petra Giertm%C3%BChlen.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h5>PETRA GIERTMÜHLEN</h5>
+                                        <h5>
+                                            13:30<br/>
+                                        </h5>
+                                        <p>
+                                            All-ceramic restorations on teeth and implants: Lessons learnt (EN)
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h2 style="text-align: center;">END</h2>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">14:15</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_title o_colored_level pb8 pt8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h1 style="text-align: center;">
+                            <font class="text-o-color-3">POST-SYMPOSIUM</font>
+                        </h1>
+                        <p style="text-align: center;">
+                            <span style="font-size: 18px;">15:00</span><br/>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="s_company_team o_colored_level pb32 pt0" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 pt24 pb24 o_colored_level registersym">
+                                <div class="row s_col_no_resize s_col_no_bgcolor shadow">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/897-098084ea/Curadent.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip150099" data-original-id="762" data-original-src="/web/image/762-271b7645/Curadent.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            <font style="" class="text-600">Information will follow
+                                            </font>
+                                        </p>
+                                        <h4>
+                                            <span style="font-weight: bolder;">CURADEN WORKSHOP</span>
+                                        </h4>
+                                        <p>
+                                            <span style="font-size: 18px;">SATURDAY 7.5.2022 15:00</span>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt24 pb24 o_colored_level registersym">
+                                <div class="row s_col_no_resize s_col_no_bgcolor shadow">
+                                    <div class="col-lg-4 pb16 o_not_editable">
+                                        <img alt="" src="/web/image/896-876e6b10/Nobel.png" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-title="" title="" aria-describedby="tooltip130535" data-original-id="763" data-original-src="/web/image/763-444eaab9/Nobel.png" data-mimetype="image/png" data-resize-width="690"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            <font style="" class="text-600">Information will follow
+                                            </font>
+                                        </p>
+                                        <h4>
+                                            <span style="font-weight: bolder;">NOBEL BIOCARE WORKSHOP</span>
+                                        </h4>
+                                        <p>
+                                            <span style="font-size: 18px;">SATURDAY 7.5.2022 15:00</span>
+                                                <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <p>
+                            <strong>Deadline&amp;nbsp;
+                                <strong>online</strong>
+                                &amp;nbsp;registration: 2.5.2022
+                            </strong>
+                            . After this date, only on-site registration will be possible. A supplement of CHF 100.- will be charged for on-site registration.
+                        </p>
+                        <p>
+                            <strong>CANCELLATION<br/></strong>
+                            All registrations received are considered binding. In the event of cancellation by 2.5.2022 CHF 100.- will be charged. After this date the full amount will be due.
+                        </p>
+                        <p>
+                            <span style="font-weight: bolder;">PRIVACY<br/>
+                            </span>
+                            By registering you agree that your personal data may be stored and that photos of the symposium may be used for marketing purposes.</p>
+                        <p>All the revenues of the Symposium will be used for research and education.<br/><br/>
+                        </p>
+                    </div>
+                </section>
+
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('no-gutters')]" position="after">
+            <div class="container">
+                <t t-if="not event.hide_online_registration">
+                    <t t-call="website_event.registration_template"/>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>

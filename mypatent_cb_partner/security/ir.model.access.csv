@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_salutation_all,res.partner.salutation all,model_res_partner_salutation,,1,0,0,0
+access_res_partner_salutation_manager,res.partner.salutation manager,model_res_partner_salutation,base.group_partner_manager,1,1,1,1
+access_res_partner_gender_all,res.partner.gender all,model_res_partner_gender,,1,0,0,0
+access_res_partner_gender_manager,res.partner.gender manager,model_res_partner_gender,base.group_partner_manager,1,1,1,1

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_partner_salutation_action" model="ir.actions.act_window">
+        <field name="name">Contact Salutations</field>
+        <field name="res_model">res.partner.salutation</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id="res_partner_salutation_tree_view" model="ir.ui.view">
+        <field name="name">Contact Salutation tree</field>
+        <field name="model">res.partner.salutation</field>
+        <field name="arch" type="xml">
+            <tree string="Contact Salutations" editable="bottom">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="res_partner_salutation_form_view" model="ir.ui.view">
+        <field name="name">Contact Salutation form</field>
+        <field name="model">res.partner.salutation</field>
+        <field name="arch" type="xml">
+            <form string="Contact Salutations">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="menu_partner_title_salutation"
+        action="res_partner_salutation_action"
+        name="Contact Salutations" parent="contacts.res_partner_menu_config"
+        sequence="3"/>
+
+</odoo>
